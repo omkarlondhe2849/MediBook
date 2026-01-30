@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f0fdfa;
+    /* Teal 50 */
+    --surface: #ffffff;
+    --primary: #0d9488;
+    /* Teal 600 */
+    --primary-dark: #0f766e;
+    /* Teal 700 */
+    --primary-light: #5eead4;
+    /* Teal 300 */
+    --secondary: #0ea5e9;
+    /* Sky 500 */
+    --accent: #f59e0b;
+    /* Amber 500 */
+  }
+
+  body {
+    @apply font-sans antialiased text-slate-800 bg-background;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-bold transition-all duration-300 transform active:scale-[0.98];
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white border border-transparent shadow-lg shadow-teal-500/20 hover:bg-primary-dark hover:shadow-teal-500/30;
+  }
+
+  .btn-outline {
+    @apply bg-white border border-slate-200 text-slate-700 shadow-sm hover:border-primary hover:text-primary hover:bg-teal-50;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-slate-100 shadow-sm p-6 transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/50 hover:border-teal-100 hover:-translate-y-1;
+  }
+
+  .input-field {
+    @apply w-full px-5 py-3.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-4 focus:ring-teal-500/10 outline-none transition-all duration-200 placeholder:text-slate-400 font-medium;
+  }
+
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/50 shadow-xl;
+  }
+
+  .mesh-gradient {
+    background-color: #f0fdfa;
+    background-image:
+      radial-gradient(at 0% 0%, hsla(173, 80%, 80%, 1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(200, 80%, 90%, 1) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(173, 80%, 95%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(200, 80%, 95%, 1) 0px, transparent 50%);
+  }
+}

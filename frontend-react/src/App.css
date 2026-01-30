@@ -1,0 +1,6 @@
+/* Cleaned up App.css - prefer using index.css global styles */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
