@@ -127,7 +127,9 @@ Ensure `GEMINI_API_KEY` is set in your environment variables or `application.pro
 Tailwind configuration can be found in `frontend-react/tailwind.config.js`.
 
 ## 👥 Contributors
-- **Omkar Londhe** - Lead Developer
+- **Omkar Londhe**
+- **Jai Sangle**
+- **Shlok Jaiswal**
 
 ## 📝 License
 This project is created for educational purposes.
