@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "whiterider/medibook-mergedr" // lowercase is safer
+        IMAGE_NAME = "whiterider/medibook-merged" // lowercase is safer
         IMAGE_TAG = "1.0.0"
     }
 
