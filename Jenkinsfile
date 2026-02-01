@@ -16,7 +16,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'docker-demo', url: 'https://github.com/omkarlondhe2849/MediBook.git'
+                git branch: 'MediBook', url: 'https://github.com/omkarlondhe2849/MediBook.git'
             }
         }
 
